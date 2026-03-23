@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "snipvault"
+version = "0.1.0"
+description = "Encrypted, searchable code snippet manager with templates and team sync"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [{name = "snipvault contributors"}]
+keywords = ["snippets", "code", "encrypted", "vault", "clipboard", "search"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Security :: Cryptography",
+]
+dependencies = [
+    "click>=8.0",
+    "cryptography>=41.0",
+    "pyperclip>=1.8",
+    "rich>=13.0",
+]
+
+[project.scripts]
+snipvault = "snipvault.cli:cli"
+
+[project.urls]
+Homepage = "https://github.com/snipvault/snipvault"
+Issues = "https://github.com/snipvault/snipvault/issues"
