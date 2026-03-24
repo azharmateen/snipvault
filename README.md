@@ -1,5 +1,8 @@
 # snipvault
 
+[![Built with Claude Code](https://img.shields.io/badge/Built%20with-Claude%20Code-blue?logo=anthropic&logoColor=white)](https://claude.ai/code)
+
+
 **Encrypted, searchable code snippet manager with templates and team sync.**
 
 Your code snippets deserve bank-grade encryption. `snipvault` stores every snippet with AES-256-GCM encryption, indexes them with SQLite FTS5 full-text search, and lets you share encrypted bundles with teammates -- all from the terminal.
